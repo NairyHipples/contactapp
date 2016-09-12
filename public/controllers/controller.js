@@ -9,6 +9,8 @@ myApp.controller('AppCtrl', ['$scope', '$http', function($scope, $http) {
         $scope.contact = "";
       });
 
+
+
     };
     //calling function to get data when loading the page
     refresh();
