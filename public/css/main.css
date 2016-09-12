@@ -1,0 +1,9 @@
+.glyphicon {
+  font-size: 20px;
+  margin-top: 2px;
+}
+.btn {
+  -webkit-box-shadow: inset 0px 0px 26px -10px rgba(41,36,36,1);
+  -moz-box-shadow: inset 0px 0px 26px -10px rgba(41,36,36,1);
+  box-shadow: inset 0px 0px 26px -10px rgba(41,36,36,1);
+}
