@@ -7,7 +7,7 @@ This is a contact list app, that helps you store update and delete contacts in a
 
 Unpack this project in which ever folder you want. Open up three command prompts.
 
-1st prompt: Go in your mongodb folder on your pc via the prompt and when you are in the bin folder type and enter "mongod" to start the database.
+1st prompt: Go in your mongodb folder on your computer via the prompt and when you are in the bin folder type and enter "mongod" to start the database.
 
 2nd prompt: Same as the first prompt only now type and enter "mongo", and then "use contactlist" to use the database used for this project.
 
