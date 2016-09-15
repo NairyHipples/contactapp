@@ -15,4 +15,4 @@ Unpack this project in which ever folder you want. Open up three command prompts
 
 //SIDENOTE
 There is a bug when pressing on 'edit' (pencil) to edit a contact, and then pressing on "add" (plus sign) so that you add the already existing contact.
-This app works totally fine when you just press "add" (plus sign) to add a new contact, and after you've updated a contact, pressing "update" (check mark).
+This app works totally fine when you just press "add" (plus sign) when adding a new contact. After you've edited a contact, you should press "update" (check mark), and not on "add" (plus sign).
