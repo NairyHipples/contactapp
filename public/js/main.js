@@ -1,6 +1,14 @@
 $(document).ready(function(){
+
   $('.edit').click(function(){
-    
+    if ($('#add').prop('disabled', false)){
+      $('#add').prop('disabled', true);
+    }
+  });
+  $('#update, #clear').click(function(){
+    if ($('#add').prop('disabled', true)){
+      $('#add').prop('disabled', false);
+    }
   });
   // $('.edit').click(function(){
   //   if($('#add').is(":visible")){

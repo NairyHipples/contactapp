@@ -3,10 +3,11 @@ myApp.controller('AppCtrl', ['$scope', '$http', function($scope, $http) {
 
     var refresh = function(){
       $http.get('/contactlist').success(function (response){
-        console.log("I got the data I requested");
+        console.log("Refresh");
         $scope.contactlist = response;
         //clear input boxes after calling refresh function
         $scope.contact = "";
+
       });
 
 
