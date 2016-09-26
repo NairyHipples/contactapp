@@ -1,7 +1,9 @@
 var express = require('express');
 var app = express();
 var mongojs = require('mongojs');
+//connecting to database through mongojs
 var db = mongojs('contactlist', ['contactlist']);
+//fetch request body
 var bodyParser = require('body-parser');
 
 
@@ -50,6 +52,7 @@ app.delete('/contactlist/:id', function(req, res){
 app.get('/contactlist/:id', function(req, res){
   var id = req.params.id;
   console.log(id);
+  //find one document that matches specified query criteria
   db.contactlist.findOne({_id: mongojs.ObjectId(id)}, function(err, doc){
     res.json(doc);
   });
@@ -59,6 +62,7 @@ app.get('/contactlist/:id', function(req, res){
 app.put('/contactlist/:id', function(req, res){
   var id = req.params.id;
   console.log(req.body.name);
+  //doesn't return changes unless we specify new option
   db.contactlist.findAndModify({query: {_id: mongojs.ObjectId(id)},
     update: {$set: {name: req.body.name, email: req.body.email, number: req.body.number}},
     new: true}, function (err, doc) {
