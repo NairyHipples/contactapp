@@ -50,7 +50,6 @@ myApp.controller('AppCtrl', ['$scope', '$http', function($scope, $http) {
 
      //update function
      $scope.update = function(){
-       //typing id with underscore because mongodb uses this convention
        console.log($scope.contact._id);
        //send everything in the input boxes to the server
        //and refresh the page when update btn is clicked
